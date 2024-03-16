@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeProvider>
           <Providers>
             {/* <Topbar /> */}
-            <Sidebar className="max-w-[1/6] bg-[#CE7178] top-0 botton-0 rounded-md" />
+            <Sidebar className="max-w-[1/6] sticky left-0" />
             <div className="overflow-y-scroll">{children}</div>
           </Providers>
         </ThemeProvider>
