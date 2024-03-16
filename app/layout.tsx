@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-screen">
+    <html lang="en" className="h-screen" suppressHydrationWarning>
       <body className="flex flex-row h-full">
         <ThemeProvider>
           <Providers>
