@@ -1,10 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Providers from './components/Providers'
-import Topbar from './components/Topbar'
+import Sidebar from './components/Sidebar'
+// import { Inter } from 'next/font/google'
+// import Topbar from './components/Topbar'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,10 +18,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-screen">
+      <body className="flex flex-row h-full">
         <Providers>
-          <Topbar />
+          {/* <Topbar /> */}
+          <Sidebar className="max-w-[1/6] bg-[#CE7178] top-0 botton-0" />
           {children}
         </Providers>
       </body>
