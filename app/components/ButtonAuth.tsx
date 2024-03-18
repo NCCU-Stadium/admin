@@ -1,8 +1,6 @@
 'use client'
 import React from 'react'
-import { Ripple, initTWE } from 'tw-elements'
 
-initTWE({ Ripple })
 interface ButtonAuthProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode

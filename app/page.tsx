@@ -33,12 +33,10 @@ export default function Home() {
     <main className=" h-screen w-screen bg-opacity-85 bg-black">
       <div className="absolute zIndex-1 h-[100vh] w-[100vw] bg-[url('/logo.svg')] bg-[length:360px_290px] blur" />
       <div className="w-1/3 h-fit relative top-[35%] mx-auto flex flex-col bg-[#fff] border-4">
-        <p>
-          <h1 className="my-3 text-center text-2xl font-semibold text-gray-600">
-            Login
-          </h1>
-          <hr />
-        </p>
+        <h1 className="my-3 text-center text-2xl font-semibold text-gray-600">
+          Login
+        </h1>
+        <hr />
         <div className="flex flex-col text-black  p-4 border-t-3">
           <input
             type="account"

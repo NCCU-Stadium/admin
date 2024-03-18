@@ -7,8 +7,8 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 
 export default function Sidebar({ className }: { className?: string }) {
-  const linkcss ='flex items-center pl-8 h-[46px] hover:bg-[#CE7178]' 
 
+  const linkcss ='flex items-center pl-8 h-[46px] hover:bg-[#CE7178]' 
   const { data: session } = useSession()
   const [activeLink, setActiveLink] = useState('')
   const pathname = usePathname()
