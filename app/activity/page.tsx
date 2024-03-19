@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import axios from 'axios'
-import Link from 'next/link'
 import ButtonAuth from '../components/ButtonAuth'
 import ButtonNew from '../components/ButtonNew'
 import Topbar from '../components/Topbar'
