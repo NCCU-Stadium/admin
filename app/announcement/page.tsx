@@ -107,7 +107,7 @@ export default function Page() {
 
   return (
     <>
-      <Topbar className="w-full">
+      <Topbar className="w-full shadow-md">
         <Search
           searchKeyword={searchKeyword}
           setSearchKeyword={setSearchKeyword}
