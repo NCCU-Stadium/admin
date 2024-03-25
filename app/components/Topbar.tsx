@@ -1,21 +1,28 @@
 'use client'
 import { useSession } from 'next-auth/react'
-import Link from 'next/link'
 import React from 'react'
+import { cn } from '@/lib/utils'
 
-export default function Topbar() {
+export default function Topbar({
+  className,
+  children,
+}: {
+  className?: string
+  children?: React.ReactNode
+}) {
   const { data: session } = useSession()
   if (!session || !session.user) {
     return null
   }
 
   return (
-    <div className="flex flex-row justify-between items-center bg-gray-100 p-4">
-      <Link href="/">Home</Link>
-      <Link href="/product">Product</Link>
-      <Link href="/announcement">Announcement</Link>
-      <Link href="/activity">Activity</Link>
-      <Link href="/reserve">ReserveSystem</Link>
+    <div
+      className={cn(
+        'flex h-[83px] sticky top-0 bg-[#F9F9F9] items-center justify-end p-9',
+        className
+      )}
+    >
+      {children}
     </div>
   )
 }

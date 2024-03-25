@@ -4,7 +4,6 @@ import Providers from './components/Providers'
 import Sidebar from './components/Sidebar'
 import { ThemeProvider } from '@/components/theme-provider'
 // import { Inter } from 'next/font/google'
-// import Topbar from './components/Topbar'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -19,13 +18,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-screen" suppressHydrationWarning>
-      <body className="flex flex-row h-full">
+    <html lang="en" className="h-screen">
+      <body className="flex flex-row h-full w-full bg-[#F9F9F9]">
         <ThemeProvider>
           <Providers>
-            {/* <Topbar /> */}
-            <Sidebar className="max-w-[1/6] bg-[#CE7178] top-0 botton-0 rounded-md" />
-            <div className="overflow-y-scroll">{children}</div>
+            <Sidebar className="max-w-[1/6] top-0 sticky" />
+            <div className="overflow-y-scroll w-full">
+              {children}
+            </div>
           </Providers>
         </ThemeProvider>
       </body>
