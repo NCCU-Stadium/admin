@@ -46,15 +46,15 @@ export default function Page() {
         Description: <textarea name="description" />
       </label>
       <label>
-        Color(use ',' to seperate):{' '}
+        Color(use &lsquo;,&rsquo; to seperate):&nbsp;
         <input type="text" name="color" placeholder="blue, green" />
       </label>
       <label>
-        Size(use ',' to seperate):{' '}
+        Size(use &lsquo;,&rsquo; to seperate):&nbsp;
         <input type="text" name="size" placeholder="S, M, L" />
       </label>
       <label>
-        Category:{' '}
+        Category:&nbsp;
         <select name="category">
           <option value={Category.racket}>Racket</option>
           <option value={Category.shoes}>Shoes</option>
